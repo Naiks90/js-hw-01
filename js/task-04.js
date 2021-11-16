@@ -4,10 +4,10 @@ const pricePerDroid = 3000;
 
 const countDroid = prompt('Сколько дроидов Вам нужно');
 if (countDroid === '' || isNaN(countDroid)) {
-  alert(`'Вы вели не число'`);
+  alert(`'Вы ввели не число'`);
 } else if (countDroid <= null) {
   alert(`'Отменено пользователем!'`);
-} else if (true) {
+} else {
   const totalPrice = pricePerDroid * countDroid;
   if (totalPrice > credits) {
     alert(`'Недостаточно средств на счету!'`);
