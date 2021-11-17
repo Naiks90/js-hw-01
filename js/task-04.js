@@ -2,8 +2,9 @@ const credits = 23580;
 const pricePerDroid = 3000;
 // let totalPrice = pricePerDroid * countDroid;
 
-const countDroid = prompt('Сколько дроидов Вам нужно');
-if (countDroid === '' || isNaN(countDroid)) {
+let countDroid = prompt('Сколько дроидов Вам нужно');
+countDroid = Number(countDroid);
+if (countDroid === '' || Number.isNaN(countDroid)) {
   alert(`'Вы ввели не число'`);
 } else if (countDroid <= null) {
   alert(`'Отменено пользователем!'`);
